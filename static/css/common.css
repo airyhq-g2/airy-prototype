@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Quicksand' ;
+  src: url(../fonts/Quicksand_Book.otf);
+}
+
+body {
+  background: url("../imgs/bg.png") no-repeat center center fixed;
+    background-size: cover; 
+  font-family: Quicksand, sans-serif;
+}
+
+.dev {
+  border: 1px solid red;
+}
+
+.dev-blue {
+  border: 1px solid blue;
+}
+
+.nav {
+  z-index: 0;
+  display: flex;
+  padding: 8px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.brand {
+  display: flex;
+  flex-grow: 2;
+}
+
+.brand-logo {
+  max-height: 64px;
+  max-width: auto;
+}
+
+.action {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 2;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+}

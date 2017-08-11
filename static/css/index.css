@@ -1,13 +1,9 @@
-@font-face {
-  font-family: 'Quicksand' ;
-  src: url(../fonts/Quicksand_Book.otf);
+body {
+  color: #ffffff;
 }
 
-body {
-  background: url("../imgs/Background.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: #ffffff;
-  font-family: Quicksand, sans-serif;
+.nav {
+  background: black;
 }
 
 .collapse-menu {
@@ -20,53 +16,12 @@ body {
   z-index: 99;
 }
 
-.dev {
-  border: 1px solid red;
-}
-
-.dev-blue {
-  border: 1px solid blue;
-}
-
-.nav {
-  z-index: 0;
-  display: flex;
-  padding: 8px;
-  flex-wrap: wrap;
-  align-content: center;
-}
-
-.brand {
-  display: flex;
-  flex-grow: 2;
-}
-
-.brand-logo {
-  max-height: 64px;
-  max-width: auto;
-}
-
-.action {
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 2;
-}
-
-.action-btn {
-  background: none;
-  border: none;
-}
-
 .container {
+  padding: 64px 16px 64px 16px;
+  background: black;
   margin-top: 72px;
   display: flex;
   flex-direction: column;
-}
-
-.promotion-content {
-  margin: 16px;
-  display: block;
-  height: 100px;
 }
 
 .promotion-title {
@@ -74,6 +29,17 @@ body {
   text-align: center;
   font-size: 35vw;
 }
+
+.promotion-title > a, .promotion-subtitle > a {
+  text-decoration: none;
+  color: white;
+}
+
+.promotion-title > a:hover, .promotion-subtitle > a:hover {
+  color: gray;
+  transition-duration: 0.3s;
+}
+
 .promotion-subtitle {
   margin: 0 16px 0 0;
   font-weight: bold;
@@ -90,6 +56,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
+    padding: 72px;
     margin-top: 192px;
     flex-direction: row;
   }
@@ -123,6 +90,8 @@ body {
     margin-left: 32px;
   }
 
+  
+
   .promotion-title {
     text-align: center;
     font-size: 25vw;
@@ -137,17 +106,20 @@ body {
 @media screen and (min-width: 1440px) {
   body {
     display: flex;
+    flex-flow: column;
+    justify-content: center;
   }
   .container {
     margin-top: 136px;
   }
 
   .sidebar {
-    margin-left: 25%;
+    margin-left: 10%; 
     min-width: 200px;
   }
 
   .promotion {
+    margin-right: 10%;
     margin-left: 48px;
   }
 
