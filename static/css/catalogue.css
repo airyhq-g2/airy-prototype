@@ -1,16 +1,6 @@
-body {
-  color: white;
-  background: white;
-  padding-bottom: 100px;  
-}
-
-
-.nav {
-  background: white;
-  color: black;
-}
-
 .product-table {
+  position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,17 +13,6 @@ body {
 .product-item > img {
   width: 100%;
   height: auto;
-}
-
-.footer {
-  background: white;
-  position: relative;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  border-top: 1px solid black;
-  color: black;
 }
 
 .product-overlay {
