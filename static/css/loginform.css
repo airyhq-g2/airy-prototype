@@ -17,8 +17,6 @@
   padding: 10px 15px 10px 15px;
 }
 
-
-
 .form-group {
   margin-bottom: 16px;
   display: flex;
@@ -53,6 +51,13 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .sign-up-section {
+    max-width: 640px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -61,4 +66,5 @@
     min-width: 800px;
     margin: 0px 88px 0px 88px;
   }
+  
 }
