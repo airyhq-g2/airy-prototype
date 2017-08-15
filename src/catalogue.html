@@ -71,13 +71,14 @@
   <div class="product-table">
     <div class="product-item">
       <div class="product-overlay">
-        <div class="product-overlay-text">
-          <a href="./product-detail.html" class="unstyled-link">
-            <h3>Condom</h3>
-            <p>0.99$</p>
-            <p>View Garment</p>
+        <a href="./product-detail.html" class="product-overlay-text flex-col unstyled-link">
+          <h3>Condom</h3>
+          <p>0.99$</p>
+          <a href="./product-detail.html" class="btn btn-icon">
+            <img src="./static/imgs/eye_black.svg" alt="view-garment">
+            <span class="btn-icon-span">View Garment</span>
           </a>
-        </div>
+        </a>
       </div>
       <img src="./static/imgs/product_thumbnail.jpg" alt="product-thumbnail" class="product-img">
     </div>
@@ -312,8 +313,40 @@
       <img src="./static/imgs/product_thumbnail.jpg" alt="product-thumbnail" class="product-img">
     </div>
   </div>
-  <footer class="footer">
-    <h1>@ 2017 AIRY</h1>
+  <footer class="footer mt-16">
+    <div class="flex-row">
+      <button class="btn-white full-width">FREE WORLDWIDE SHIPPING</button>
+    </div>
+    <div class="flex-row space-around mt-16 wrap">
+      <div class="flex-col text-l">
+        <strong>Our flagship stores</strong>
+        <small>London & Sheffield</small>
+      </div>
+      <div class="flex-col text-l">
+        <strong>HELP</strong>
+        <small>Delivery</small>
+        <small>Order & Returns</small>
+        <small>Other FAQ</small>
+        <small>Contact us</small>
+      </div>
+      <div class="flex-col text-l">
+        <strong>AIRY SOCIAL</strong>
+        <small>Twitter</small>
+        <small>Facebook</small>
+        <small>Instragram</small>
+        <small>Shop Insta</small>
+      </div>
+      <div class="flex-col text-l">
+        <strong>JOIN US</strong>
+        <small>Enter your email to receiver updates and offers</small>
+        <input type="email" name="join-us-email" id="">
+      </div>
+    </div>
+    <div class="flex-row space-around mt-16">
+      <span class="text-muted">@ 2017 AIRY</span>
+      <span>Term & Condition</span>
+      <span>Privacy Policy</span>
+    </div>
   </footer>
   <script src="./static/js/navbar.js"></script>
 </body>

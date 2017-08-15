@@ -1,12 +1,8 @@
 .product-table {
-  position: relative;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-
 
 .product-overlay {
   display: flex;
