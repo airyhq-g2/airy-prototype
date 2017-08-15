@@ -153,13 +153,11 @@ body {
 }
 
 .btn-sm {
-  padding: 2px;
-  height: 24px;
-  width: 24px;
+  padding: 10px 16px 10px 16px;
 }
 
 .input-sm {
-  width: 32px;
+  width: 48px;
 }
 
 .btn-circle {
