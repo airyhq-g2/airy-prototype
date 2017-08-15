@@ -13,25 +13,70 @@
   <nav class="nav">
     <div class="brand">
       <a href="index.html">
-        <img src="./static/imgs/brand_logo_inverse.png" alt="brand-logo" class="brand-logo">
+        <img src="static/imgs/brand_logo_inverse.png" alt="brand-logo" class="brand-logo">
       </a>
     </div>
     <div class="action">
-      <button class="action-btn">
-        <img src="./static/imgs/shopping_basket_black.svg" alt="menu">
+      <button class="btn btn-icon" id="basket-toggler">
+        <img src="static/imgs/shopping_basket_black.svg" alt="shopping-basket">
       </button>
-      <button class="action-btn">
-        <img src="./static/imgs/menu_black.svg" alt="menu">
-      </button>
+      <button class="btn btn-icon" id="hamburger-toggler">
+        <img src="static/imgs/menu_black.svg" alt="menu">
+      </a>
     </div>
   </nav>
+  <div class="collapse-menu" id="basket-menu">
+    <h1 class="ml-16">Cart</h1>
+    <div class="total-section">
+      <strong>PRODUCT NAME</strong>
+      <span>PRICE</span>
+    </div>
+    <div class="dot-divider"></div>
+    <div class="total-section">
+      <strong><a href="#" class="unstyled-link">Condom A</a> x 1</strong>
+      <span> $0.99 </span>
+    </div>
+    <div class="dot-divider"></div>
+    <div class="total-section">
+      <strong>SUBTOTAL: </strong>
+      <span>$0.00</span>
+    </div>
+    <button class="btn btn-default ml-16">CHECKOUT</button>
+  </div>
+  <div class="collapse-menu" id="hamburger-menu">
+    <ul class="collapse-ul">
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+    </ul>
+  </div>
   <div class="product-table">
     <div class="product-item">
       <div class="product-overlay">
         <div class="product-overlay-text">
-          <h3>Condom</h3>
-          <p>0.99$</p>
-          <p>View Garment</p>
+          <a href="./product-detail.html" class="unstyled-link">
+            <h3>Condom</h3>
+            <p>0.99$</p>
+            <p>View Garment</p>
+          </a>
         </div>
       </div>
       <img src="./static/imgs/product_thumbnail.jpg" alt="product-thumbnail" class="product-img">
@@ -270,5 +315,6 @@
   <footer class="footer">
     <h1>@ 2017 AIRY</h1>
   </footer>
+  <script src="./static/js/navbar.js"></script>
 </body>
 </html>

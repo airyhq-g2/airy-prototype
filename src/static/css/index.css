@@ -4,6 +4,11 @@ body {
   color: #ffffff;
 }
 
+.brand-logo {
+  width: auto;
+  height: 100%;
+}
+
 .nav {
   background: black;
 }
@@ -15,19 +20,9 @@ body {
 }
 
 .promotion-title {
-  margin: 0px;
+  margin: 0;
   text-align: center;
   font-size: 35vw;
-}
-
-.promotion-title > a, .promotion-subtitle > a {
-  text-decoration: none;
-  color: white;
-}
-
-.promotion-title > a:hover, .promotion-subtitle > a:hover {
-  color: gray;
-  transition-duration: 0.3s;
 }
 
 .promotion-subtitle {
@@ -38,10 +33,6 @@ body {
 
 .sidebar {
   display: none; 
-}
-
-.sidebar-list {
-  margin-bottom: 8px;
 }
 
 .sidebar-ul {
@@ -58,22 +49,13 @@ body {
     flex-direction: row;
   }
   .nav {
-    display: none;
+    /* display: none; */
   }
   .sidebar {
     flex-grow: 2;
     margin-left: 32px;
     display: flex;
     flex-direction: column;
-  }
-
-  .sidebar-link {
-    text-decoration: none;
-    color: white;
-  }
-
-  .sidebar-link:hover {
-    color: grey;
   }
 
   .promotion {

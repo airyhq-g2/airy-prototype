@@ -2,12 +2,158 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=ice-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./static/css/common.css">
+  <link rel="stylesheet" href="./static/css/product-detail.css">
   <title>Product Name - AIRY</title>
 </head>
 <body>
-    
+<nav class="nav">
+    <div class="brand">
+      <a href="index.html">
+        <img src="static/imgs/brand_logo_inverse.png" alt="brand-logo" class="brand-logo">
+      </a>
+    </div>
+    <div class="action">
+      <button class="btn btn-icon" id="basket-toggler">
+        <img src="static/imgs/shopping_basket_black.svg" alt="shopping-basket">
+      </button>
+      <button class="btn btn-icon" id="hamburger-toggler">
+        <img src="static/imgs/menu_black.svg" alt="menu">
+      </a>
+    </div>
+  </nav>
+  <div class="collapse-menu" id="basket-menu">
+    <h1 class="ml-16">Cart</h1>
+    <div class="total-section">
+      <strong>PRODUCT NAME</strong>
+      <span>PRICE</span>
+    </div>
+    <div class="dot-divider"></div>
+    <div class="total-section">
+      <strong><a href="#" class="unstyled-link">Condom A</a> x 1</strong>
+      <span> $0.99 </span>
+    </div>
+    <div class="dot-divider"></div>
+    <div class="total-section">
+      <strong>SUBTOTAL: </strong>
+      <span>$0.00</span>
+    </div>
+    <button class="btn btn-default ml-16">CHECKOUT</button>
+  </div>
+  <div class="collapse-menu" id="hamburger-menu">
+    <ul class="collapse-ul">
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+    </ul>
+  </div>
+  <a href="./catalogue.html" class="unstyled-link">Back to Catalogue</a>
+  <div class="container bg-light-brown mt-16">
+    <div class="product-item mb-16">
+      <img class="prodcut-img" src="./static/imgs/product_thumbnail.jpg" alt="product-img">
+    </div>
+    <div class="add-desktop">
+      <div class="ma-16">
+        <strong>Product Name</strong><br>
+        <small class="text-muted">Category</small>
+      </div>
+      <div class="ma-16">
+        <span>$0.99</span>
+      </div>
+      <div class="add-tablet ma-8">
+        <div class="dot-divider"></div>
+        <form action="" method="post" class="form-flex-col">
+          <select name="" id="">
+            <option value="xs">X-small</option>
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+             <option value="l">Large</option>
+            <option value="xl">X-Large</option>
+          </select>
+          <div class="dot-divider"></div>
+          <input class="btn btn-brown" type="submit" value="ADD TO CART">
+        </form>
+        <div class="dot-divider"></div>
+        <div class="flex-row mb-16">
+          <a class="btn btn-icon">
+            <img src="./static/imgs/favorite_black.svg" alt="wishlist">
+            <span class="btn-icon-span">Add to wishlist</span>
+          </a>
+          <a class="btn btn-icon">
+            <img src="./static/imgs/share_black.svg" alt="share">
+            <span class="btn-icon-span">Share</span>
+          </a>
+        </div>
+        <div class="dot-divider"></div>
+        <div class="flex-row mb-16">
+          <a class="btn btn-icon" href="#product-detail">
+            <img src="./static/imgs/eye_black.svg" alt="product detail">
+            <span class="btn-icon-span">Product Detail</span>
+          </a>
+          <a class="btn btn-icon" href="">
+            <img src="./static/imgs/local_shipping_black.svg" alt="delivery">
+            <span class="btn-icon-span">Delivery</span>
+          </a>
+        </div>
+        <div class="dot-divider"></div>
+      </div>
+    </div>
+  </div>
+  <div id="product-detail" class="product-detail bg-brown">
+    <h3><strong>Product Details</strong></h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum velit tempora est. Nihil error et voluptate placeat, explicabo sint repudiandae perferendis tempore alias autem officiis, voluptatibus, quam accusamus neque inventore?</p>
+  </div>
+  <div class="add-mobile bg-white">
+    <div class="toolbar">
+      <div>
+        <h3>Choose your product</h3>
+      </div>
+      <div>
+        <button class="btn">
+          <img src="./static/imgs/close_black.svg" alt="close">
+        </button>
+      </div>
+    </div>
+    <form action="" method="post" class="-blue">
+      <select name="size" id="select-size">
+        <option value="xs">X-small</option>
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+        <option value="xl">X-Large</option>
+      </select>
+      <div class="dot-divider"></div>
+      <input class="btn btn-white" type="submit" value="ADD TO CART">
+    </form>
+  </div>
+  <div class="toolbar bottom-fixed bg-white">
+    <div>
+      <button class="btn btn-white ml-16 mb-8">ADD</button>
+    </div>
+    <div class="mr-16">
+      <strong>$0.99</strong>
+    </div>
+  </div>
+  <script src="./static/js/navbar.js"></script>
 </body>
 </html>

@@ -6,14 +6,7 @@
   justify-content: center;
 }
 
-.product-item {
-  position: relative;
-}
 
-.product-item > img {
-  width: 100%;
-  height: auto;
-}
 
 .product-overlay {
   display: flex;
@@ -43,11 +36,5 @@
   .product-table {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .product-item {
-    min-width: 240px;
-    max-width: 400px;
-    height: auto;
   }
 }

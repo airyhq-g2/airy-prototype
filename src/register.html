@@ -13,45 +13,92 @@
   <nav class="nav">
     <div class="brand">
       <a href="index.html">
-        <img src="./static/imgs/brand_logo_inverse.png" alt="brand-logo" class="brand-logo">
+        <img src="static/imgs/brand_logo_inverse.png" alt="brand-logo" class="brand-logo">
       </a>
     </div>
     <div class="action">
-      <button class="action-btn">
-        <img src="./static/imgs/shopping_basket_black.svg" alt="menu">
+      <button class="btn btn-icon" id="basket-toggler">
+        <img src="static/imgs/shopping_basket_black.svg" alt="shopping-basket">
       </button>
-      <button class="action-btn">
-        <img src="./static/imgs/menu_black.svg" alt="menu">
-      </button>
+      <button class="btn btn-icon" id="hamburger-toggler">
+        <img src="static/imgs/menu_black.svg" alt="menu">
+      </a>
     </div>
   </nav>
+  <div class="collapse-menu" id="basket-menu">
+    <h1 class="ml-16">Cart</h1>
+    <div class="total-section">
+      <strong>PRODUCT NAME</strong>
+      <span>PRICE</span>
+    </div>
+    <div class="dot-divider"></div>
+    <div class="total-section">
+      <strong><a href="#" class="unstyled-link">Condom A</a> x 1</strong>
+      <span> $0.99 </span>
+    </div>
+    <div class="dot-divider"></div>
+    <div class="total-section">
+      <strong>SUBTOTAL: </strong>
+      <span>$0.00</span>
+    </div>
+    <button class="btn btn-default ml-16">CHECKOUT</button>
+  </div>
+  <div class="collapse-menu" id="hamburger-menu">
+    <ul class="collapse-ul">
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+      <li class="collapse-li">
+        <a href="#" class="unstyled-link"><strong>Guys</strong></a>
+      </li>
+    </ul>
+  </div>
   <div class="container">
-    <form action="" method="post" class="login-form">
+    <form method="post" class="login-form">
       <h2 class="login-form-title">Create Account</h2>
       <div class="dot-divider"></div>
       <div class="form-group">
         <label for="">First Name</label>
-        <input class="login-form-input" type="text" placeholder="First Name">
+        <input class="login-form-input" type="text" placeholder="First Name" required>
       </div>
       <div class="form-group">
         <label for="">Last Name</label>
-        <input class="login-form-input" type="text" placeholder="Last Name">
+        <input class="login-form-input" type="text" placeholder="Last Name" required>
       </div>
       <div class="form-group">
         <label for="">Address</label>
-        <input class="login-form-input" type="text" placeholder="Address">
+        <input class="login-form-input" type="text" placeholder="Address" required>
       </div>
       <div class="form-group">
         <label for="">Email Address</label>
-        <input class="login-form-input" type="email" placeholder="example@example.com">
+        <input class="login-form-input" type="email" placeholder="example@example.com" required>
       </div>
       <div class="form-group">
         <label for="">Password</label>
-        <input class="login-form-input" type="password" placeholder="Password">
+        <input class="login-form-input" type="password" placeholder="Password" required>
+      </div>
+      <div class="form-group">
+        <label for="">Password Again</label>
+        <input class="login-form-input" type="password" placeholder="Password Again" required>
       </div>
       <div class="dot-divider"></div>
       <div class="sign-up-section">
-        <input class="btn-default" type="submit" value="CREATE ACCOUNT">
+        <input class="btn   btn-default" type="submit" value="CREATE ACCOUNT">
         <p>or Already Have An Account? <a class="unstyled-link" href="./login.html"><strong> Sign In </strong></a></p>
       </div>
     </form>
@@ -59,5 +106,6 @@
   <footer class="footer">
     <h1>@ 2017 AIRY</h1>
   </footer>
+  <script src="./static/js/navbar.js"></script>
 </body>
 </html>

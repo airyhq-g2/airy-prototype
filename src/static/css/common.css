@@ -4,6 +4,7 @@
 }
 
 body {
+  padding-top: 80px;
   font-family: Quicksand, sans-serif;
   color: black;
   background: white;
@@ -24,7 +25,11 @@ body {
 }
 
 .nav {
-  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   display: flex;
   padding: 8px;
   flex-wrap: wrap;
@@ -39,19 +44,15 @@ body {
 }
 
 .brand-logo {
-  max-height: 64px;
-  max-width: auto;
+  height: 60px;
+  width: auto;
 }
 
 .action {
   display: flex;
   justify-content: flex-end;
+  margin-right: 10px; 
   flex-grow: 2;
-}
-
-.action-btn {
-  background: none;
-  border: none;
 }
 
 .footer {
@@ -70,25 +71,37 @@ body {
   border-top: 1px dotted grey;
 }
 
-.unstyled-link {
+.unstyled-link, .unstyled-link-white {
   text-decoration: none;
+}
+
+.unstyled-link {
   color: black;
 }
 
-.unstyled-link:hover {
+.unstyled-link-white {
+  color: white;
+}
+.unstyled-link:hover, .unstyled-link-white:hover {
   color: grey;
 }
 
+.transition-5 {
+  transition: 0.5s ease;
+}
+
 .collapse-menu {
-  /* display: none;  */
-  position: absolute;
+  overflow: hidden;
+  max-height: 0;
   background: white;
   color: black;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 61px;
+  right: 0;
   width: 100%;
   height: 100%;
-  z-index: 99;
+  transition: 0.3s ease;
+  z-index: 100;
 }
 
 .collapse-ul {
@@ -114,8 +127,30 @@ body {
   justify-content: space-between;
 }
 
-.btn-default {
+.btn {
   border: none;
+  background: none;
+  text-decoration: none;
+}
+
+.btn-icon {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.btn-icon-span {
+  margin-left: 4px;
+}
+
+.btn-icon:hover {
+  color: gray;
+}
+
+.btn-default {
   background: black;
   color: white;
   padding: 8px 64px 8px 64px;
@@ -126,12 +161,152 @@ body {
   transition: .5s ease;
 }
 
+.btn-brown {
+  background: #b2a586;
+  color: white;
+  padding: 8px 64px 8px 64px;
+}
+
+.btn-white {
+  border: 1px solid black;
+  background: white;
+  color: black;
+  padding: 8px 64px 8px 64px;
+}
+
+.btn-white:hover {
+  background: grey;
+  transition: .5s ease;
+}
+
+.ma-8 {
+  margin: 8px;
+}
+
+.ma-16 {
+  margin: 16px;
+}
+
+.mb-8 {
+  margin-bottom: 8px; 
+}
+
+.pa8 {
+  padding: 8px;
+}
+
+.ph-8 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.pv-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.mt-16 {
+  margin-top: 16px; 
+}
+
+.mb-16 {
+  margin-bottom: 16px; 
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
 .ml-16 {
   margin-left: 16px; 
+}
+
+.product-item {
+  position: relative;
+}
+
+.product-item > img {
+  width: 100%;
+  height: auto;
+}
+
+.bg-light-brown {
+  background: #ece8e2;
+}
+
+.bg-brown {
+  background: #b2a586;
+}
+
+.bg-black {
+  background: black;
+}
+
+.bg-white {
+  background: white;
+}
+
+.bottom-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.text-c {
+  text-align: center;
+}
+
+.text-l {
+  text-align: left;
+}
+
+.text-r {
+  text-align: right;
+}
+
+.unstyled-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.unstyled-li {
+  margin-bottom: 0; 
+}
+
+.form-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  border: 4px solid gray;
+  background: white;
+  padding: 8px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-muted {
+  color: grey;
 }
 
 @media screen and (min-width: 768px) {
   .brand {
     justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-item {
+    min-width: 240px;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .collapse-menu {
+    width: 25%;
   }
 }
